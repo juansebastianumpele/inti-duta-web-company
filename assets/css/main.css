@@ -9,9 +9,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #1c75db; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #14232e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff4a17; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #1c75db; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: hsl(0, 0%, 7%); /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -20,11 +20,11 @@
 :root {
   --nav-color: #201f20;  /* The default color of the main navmenu links */
   --nav-background-color: #ffffff;
-  --nav-hover-color: #ff4a17; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #1c75db; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: rgba(53, 51, 51, 0.638); /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #201f20; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ff4a17; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #1c75db; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -35,7 +35,7 @@
 }
 
 .dark-background {
-  --background-color: #313131;
+  --background-color: #1c75db;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #ffffff;
@@ -229,7 +229,7 @@ h6 {
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
- }
+}
 
 .header .logo h1 {
   font-size: 30px;
@@ -444,7 +444,7 @@ h6 {
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border: 1px solid color-mix(in srgb, var(--default-color), #00000005 90%);
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
@@ -536,12 +536,29 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(33, 37, 41, 0.9);
     transition: 0.3s;
   }
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+
+  .mobile-nav-active .navmenu a,
+  .mobile-nav-active .navmenu a:focus {
+    color: #ffffff;
+  }
+
+  .mobile-nav-active .navmenu a:hover,
+  .mobile-nav-active .navmenu .active,
+  .mobile-nav-active .navmenu .active:focus {
+    color: var(--accent-color);
+  }
+
+  .mobile-nav-active .navmenu a i,
+  .mobile-nav-active .navmenu a:focus i {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
   }
 }
 
@@ -811,6 +828,7 @@ h6 {
   margin-bottom: 10px;
 }
 
+
 .page-title .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -831,6 +849,88 @@ h6 {
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.page-title.dark-background {
+  padding: 160px 0 110px 0;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.page-title.dark-background .container {
+  text-align: center;
+}
+
+.page-title.dark-background::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(23, 124, 255, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-title.dark-background h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.page-title.dark-background p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.page-title.dark-background .breadcrumbs {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  display: inline-flex;
+}
+
+.page-title.dark-background .breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.page-title.dark-background .breadcrumbs ol li {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.page-title.dark-background .breadcrumbs ol li + li::before {
+  content: "/";
+  display: inline-block;
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.page-title.dark-background .breadcrumbs a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.page-title.dark-background .breadcrumbs a:hover {
+  color: var(--accent-color);
+}
+
+.page-title.dark-background .breadcrumbs .current {
+  color: #ffffff;
+  font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -993,8 +1093,17 @@ section,
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
+  
+  #hero .container h1 {
+    font-size: 32px !important;
+  }
+  #hero .container a {
+    font-size: 10px !important;
+    padding: 8px 20px !important;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -1170,7 +1279,7 @@ section,
 
 @media (max-width: 640px) {
   .clients .client-logo img {
-    padding: 20px;
+    padding: 2px;
   }
 }
 
@@ -1863,7 +1972,7 @@ section,
   background-color: var(--accent-color) !important;
   color: #ffffff !important;
   border-color: var(--accent-color) !important;
-  box-shadow: 0 4px 15px rgba(255, 74, 23, 0.3);
+  box-shadow: 0 4px 15px rgba(23, 151, 255, 0.4);
 }
 
 .product-card {
@@ -1984,7 +2093,7 @@ section,
 --------------------------------------------------------------*/
 .premium-page-title {
   background: 
-    linear-gradient(135deg, rgba(16, 28, 38, 0.96) 0%, rgba(26, 46, 61, 0.9) 50%, rgba(255, 74, 23, 0.15) 100%),
+    linear-gradient(135deg, rgba(16, 28, 38, 0.96) 0%, rgba(26, 46, 61, 0.9) 50%, rgba(23, 151, 255, 0.15) 100%),
     url('../img/hero-bg.jpg') center/cover no-repeat;
   padding: 160px 0 110px 0;
   position: relative;
@@ -1999,7 +2108,7 @@ section,
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255, 74, 23, 0.08) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(23, 124, 255, 0.08) 0%, rgba(0,0,0,0) 70%);
   z-index: 1;
   pointer-events: none;
 }
@@ -2007,9 +2116,9 @@ section,
 .premium-page-title .badge {
   letter-spacing: 3px;
   font-size: 0.75rem;
-  background-color: rgba(255, 74, 23, 0.12) !important;
+  background-color: rrgba(23, 65, 255, 0.12) !important;
   color: var(--accent-color) !important;
-  border: 1px solid rgba(255, 74, 23, 0.3);
+  border: 1px solid rgba(23, 151, 255, 0.4);
   backdrop-filter: blur(4px);
   padding: 8px 16px !important;
   border-radius: 50px;
@@ -2120,7 +2229,7 @@ section,
 # Elegant Hero & Button Enhancements
 --------------------------------------------------------------*/
 .hero:before {
-  background: linear-gradient(135deg, rgba(16, 28, 38, 0.95) 0%, rgba(26, 46, 61, 0.85) 50%, rgba(255, 74, 23, 0.2) 100%) !important;
+  background: linear-gradient(135deg, rgba(16, 28, 38, 0.95) 0%, rgba(26, 46, 61, 0.85) 50%, rgba(23, 116, 255, 0.2) 100%) !important;
 }
 
 .hero {
@@ -2140,7 +2249,7 @@ section,
   background-color: transparent !important;
   color: var(--accent-color) !important;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 74, 23, 0.4) !important;
+  box-shadow: 0 5px 15px rgba(23, 131, 255, 0.4) !important;
 }
 
 .btn-explore-products {
@@ -2152,7 +2261,7 @@ section,
   border-color: var(--accent-color) !important;
   color: #ffffff !important;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 74, 23, 0.4) !important;
+  box-shadow: 0 5px 15px rgba(23, 131, 255, 0.4) !important;
 }
 
 /*--------------------------------------------------------------
@@ -2174,15 +2283,15 @@ section,
 
 .about-feature-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 74, 23, 0.25);
-  box-shadow: 0 12px 30px rgba(255, 74, 23, 0.08);
+  border-color: rgba(23, 131, 255, 0.25);
+  box-shadow: 0 12px 30px rgba(23, 124, 255, 0.08);
 }
 
 .about-feature-card .feature-icon {
   width: 50px;
   height: 50px;
   border-radius: 12px;
-  background: rgba(255, 74, 23, 0.08);
+  background: rgba(23, 124, 255, 0.08);
   color: var(--accent-color);
   display: flex;
   align-items: center;
@@ -2257,8 +2366,8 @@ section,
 
 .services .service-item:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(255, 74, 23, 0.09);
-  border-color: rgba(255, 74, 23, 0.2);
+  box-shadow: 0 20px 45px rgba(23, 151, 255, 0.09);
+  border-color: rgba(23, 170, 255, 0.2);
 }
 
 .services .service-item .img {
@@ -2289,7 +2398,7 @@ section,
 .services .service-item .icon {
   width: 54px;
   height: 54px;
-  background: linear-gradient(135deg, var(--accent-color) 0%, #ff734d 100%);
+  background: linear-gradient(135deg, var(--accent-color) 0%, #1c75db 100%);
   color: #ffffff;
   border-radius: 12px;
   display: flex;
@@ -2300,13 +2409,13 @@ section,
   top: -27px;
   left: 25px;
   border: 3px solid #ffffff;
-  box-shadow: 0 5px 15px rgba(255, 74, 23, 0.25);
+  box-shadow: 0 5px 15px rgba(23, 131, 255, 0.25);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .services .service-item:hover .icon {
   transform: rotate(6deg) scale(1.05);
-  box-shadow: 0 8px 20px rgba(255, 74, 23, 0.4);
+  box-shadow: 0 8px 20px rgba(23, 131, 255, 0.4);
 }
 
 .services .service-item h3 {
@@ -2336,7 +2445,7 @@ section,
   color: #ffffff;
   border-radius: 24px;
   padding: 55px 45px;
-  border: 1px solid rgba(255, 74, 23, 0.16);
+  border: 1px solid rgba(23, 131, 255, 0.16);
   box-shadow: 0 15px 40px rgba(16, 28, 38, 0.25);
   position: relative;
   overflow: hidden;
@@ -2349,7 +2458,7 @@ section,
   right: -10%;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(255, 74, 23, 0.1) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(23, 131, 255, 0.1) 0%, rgba(0,0,0,0) 70%);
   pointer-events: none;
 }
 
@@ -2385,14 +2494,14 @@ section,
   gap: 8px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   text-decoration: none;
-  box-shadow: 0 5px 15px rgba(255, 74, 23, 0.3);
+  box-shadow: 0 5px 15px rgba(23, 151, 255, 0.4);
 }
 
 .services-cta-banner .btn-consultation:hover {
   background-color: transparent;
   color: var(--accent-color);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(255, 74, 23, 0.4);
+  box-shadow: 0 8px 20px rgba(23, 131, 255, 0.4);
 }
 
 /*--------------------------------------------------------------
@@ -2474,8 +2583,8 @@ section,
 
 .contact .info-item:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 74, 23, 0.2);
-  box-shadow: 0 15px 32px rgba(255, 74, 23, 0.08);
+  border-color: rgba(23, 170, 255, 0.2);
+  box-shadow: 0 15px 32px rgba(23, 124, 255, 0.08);
 }
 
 .contact .info-item i {
@@ -2483,7 +2592,7 @@ section,
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255, 74, 23, 0.07);
+  background: rgba(23, 116, 255, 0.07);
   color: var(--accent-color);
   display: inline-flex;
   align-items: center;
@@ -2535,7 +2644,7 @@ section,
 .contact .php-email-form .form-control:focus {
   background: #ffffff;
   border-color: var(--accent-color);
-  box-shadow: 0 0 0 4px rgba(255, 74, 23, 0.12);
+  box-shadow: 0 0 0 4px rgba(23, 65, 255, 0.12);
   outline: none;
 }
 
@@ -2544,7 +2653,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: linear-gradient(135deg, var(--accent-color) 0%, #ff6b42 100%);
+  background: linear-gradient(135deg, var(--accent-color) 0%, #1c75db 100%);
   color: #ffffff;
   border: none;
   padding: 13px 36px;
@@ -2554,7 +2663,7 @@ section,
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 6px 18px rgba(255, 74, 23, 0.3);
+  box-shadow: 0 6px 18px rgba(23, 151, 255, 0.4);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -2562,7 +2671,76 @@ section,
 
 .contact .php-email-form button[type="submit"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(255, 74, 23, 0.42);
+  box-shadow: 0 8px 22px rgba(0, 153, 255, 0.42);
   opacity: 0.95;
 }
 
+
+
+/*--------------------------------------------------------------
+# Mobile Responsiveness Tweaks
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  /* Hero Section */
+  .hero-b2b .hero-title {
+    font-size: 2.25rem !important;
+  }
+  .hero-b2b .hero-desc {
+    font-size: 1rem !important;
+  }
+  .hero-b2b .d-flex.gap-3 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-b2b .btn-get-started, .hero-b2b .btn-explore-products {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* About Section */
+  .about-img-wrapper {
+    min-height: auto !important;
+  }
+
+  /* Services Banner */
+  .premium-cta-banner {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 30px 20px !important;
+    gap: 20px;
+  }
+  .premium-cta-banner .cta-content {
+    max-width: 100% !important;
+  }
+  .premium-cta-banner .cta-content h3 {
+    font-size: 1.4rem !important;
+  }
+  
+  /* Page Title (Produk) */
+  .b2b-page-title .title-heading {
+    font-size: 2.2rem !important;
+  }
+  
+  /* Section Titles */
+  .elegant-section-title .section-main-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Form Padding */
+  .contact .php-email-form {
+    padding: 25px 20px !important;
+  }
+  
+  /* Service Card Padding */
+  .services .service-item .details {
+    padding: 35px 15px 20px 15px !important;
+  }
+  
+  /* Dual Image Grid padding */
+  .about .row.gy-4 .col-6 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
