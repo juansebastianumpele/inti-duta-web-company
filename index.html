@@ -32,52 +32,10 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo idlp.png" alt="">
-
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#products">Produk</a></li>
-          <li><a href="#services">Layanan Manufaktur</a></li>
-          <!-- <li><a href="#team">P</a></li> -->
-          <!-- <li><a href="/portfolio-details.html">Produk Kami</a></li> -->
-
-          <!-- <li class="dropdown"><a href="#"><span>Produk Kami</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact">Hubungi Kami</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!--<a class="cta-btn" href="index.html#about">Get Started</a> -->
-
-    </div>
-  </header>
+  <script src="assets/js/navbar.js"></script>
+  <script>
+    loadNavbar('');
+  </script>
 
   <main class="main">
 
@@ -86,12 +44,44 @@
 
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
-      <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Precision • Innovation • Sustainability</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Kemasan Tepat, Untuk Semua Kebutuhan Anda.</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="#about" class="btn-get-started">Get Started</a>
+      <div class="container d-flex flex-column align-items-center text-center">
+        <span class="badge rounded-pill px-3 py-2 text-uppercase mb-3 fw-semibold text-accent"
+          style="letter-spacing: 3px; font-size: 0.8rem; background-color: rgba(255, 74, 23, 0.15); color: var(--accent-color); border: 1px solid rgba(255, 74, 23, 0.35); backdrop-filter: blur(4px);"
+          data-aos="fade-up" data-aos-delay="100">PT Inti Duta Lestari Plasindo</span>
+        <h1 class="text-white fw-bold mb-3"
+          style="font-size: 3.8rem; letter-spacing: -1.5px; line-height: 1.15; text-shadow: 0 4px 15px rgba(235, 124, 50, 0.4);"
+          data-aos="fade-up" data-aos-delay="200">Kemasan Plastik Presisi<br><span
+            style="color: var(--accent-color);">Untuk Industri & Konsumen</span></h1>
 
+        <p class="text-white-50 fs-5 mb-4"
+          style="max-width: 750px; font-weight: 300; line-height: 1.6; text-shadow: 0 2px 10px rgba(0,0,0,0.3);"
+          data-aos="fade-up" data-aos-delay="300">Menghadirkan solusi manufaktur plastik berkualitas tinggi dengan
+          teknologi Blow Molding, Injection Molding, dan pembuatan cetakan kustom untuk memenuhi standar mutu kebutuhan
+          bisnis Anda.</p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4 mb-4 text-white-50" style="font-size: 0.9rem;"
+          data-aos="fade-up" data-aos-delay="350">
+          <span class="d-flex align-items-center gap-2"><i class="bi bi-patch-check-fill text-accent"
+              style="color: var(--accent-color);"></i> Precision Quality</span>
+          <span class="d-flex align-items-center gap-2"><i class="bi bi-patch-check-fill text-accent"
+              style="color: var(--accent-color);"></i> Modern Innovation</span>
+          <span class="d-flex align-items-center gap-2"><i class="bi bi-patch-check-fill text-accent"
+              style="color: var(--accent-color);"></i> Eco Sustainability</span>
+        </div>
+
+        <div class="d-flex gap-3 mt-2" data-aos="fade-up" data-aos-delay="400">
+          <a href="index.html#about"
+            class="btn-get-started rounded-pill px-4 py-3 fw-semibold text-uppercase transition-hover d-flex align-items-center gap-2"
+            style="font-size: 0.85rem; letter-spacing: 1px; text-decoration: none;">
+            <span>Tentang Kami</span>
+            <i class="bi bi-arrow-down-short fs-5"></i>
+          </a>
+          <a href="produk.html"
+            class="btn-explore-products rounded-pill px-4 py-3 fw-semibold text-uppercase transition-hover d-flex align-items-center gap-2"
+            style="font-size: 0.85rem; letter-spacing: 1px; color: #ffffff; border: 2px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.05); backdrop-filter: blur(4px); text-decoration: none;">
+            <span>Katalog Produk</span>
+            <i class="bi bi-arrow-right-short fs-5"></i>
+          </a>
         </div>
       </div>
 
@@ -100,361 +90,156 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
+      <!-- Section Title -->
+      <div class="container elegant-section-title" data-aos="fade-up">
+        <span class="section-subtitle">Tentang Kami</span>
+        <h2 class="section-main-title">Mengenal Inti Duta Lestari Plasindo</h2>
+        <div class="section-divider"></div>
+      </div><!-- End Section Title -->
+
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row gy-5 align-items-center">
+
+          <!-- Left Column -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Integritas, Kualitas, dan Inovasi dalam Setiap Produk</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>PT Inti Duta Lestari Plasindo adalah mitra manufaktur terpercaya yang berfokus pada inovasi, kualitas,
+            <h3 class="fw-bold text-dark mb-4" style="font-size: 1.85rem; letter-spacing: -0.5px; line-height: 1.3;">
+              Integritas, Kualitas, dan Inovasi dalam Setiap Produk
+            </h3>
+
+            <p class="text-secondary mb-3" style="line-height: 1.65; font-size: 0.98rem;">
+              PT Inti Duta Lestari Plasindo adalah mitra manufaktur terpercaya yang berfokus pada inovasi, kualitas,
               dan integritas. Kami hadir untuk mendukung kebutuhan konsumen rumah tangga hingga sektor industri melalui
-              ragam produk perawatan hewan peliharaan dan tanaman, kebersihan, serta solusi pengemasan untuk industri
+              ragam produk perawatan hewan peliharaan, kebersihan, serta solusi pengemasan industri.
             </p>
-            <p>Dengan integrasi teknologi plastik dan logam, kami menghadirkan produk berkualitas tinggi untuk
-              memberikan nilai lebih bagi pelanggan dalam fungsionalitas dan harga yang kompetitif.</p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Keunggulan kami terletak pada penguasaan teknologi manufaktur yang komprehensif untuk memastikan setiap
-                detail produk sempurna:
 
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>
-                    <bold>Injection Molding:</bold>Digunakan untuk memproduksi komponen dengan tingkat presisi tinggi
-                    dan detail yang rumit.
-                  </span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Blow Molding: Teknologi utama kami dalam memproduksi
-                    botol dan jerigen dengan bahan baku murni untuk memberikan kekuatan ekstra dan penampilan
-                    premium.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Spot Welding: Fabrikasi kawat besi otomatis dengan
-                    kontrol yang presisi untuk menghasilkan produk yang rapi dan kuat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>In-House Mold Shop: Untuk mewujudkan desain produk
-                    plastic custom yang unik sesuai kebutuhan dan identitas brand anda</span></li>
-              </ul>
+            <p class="text-secondary mb-5" style="line-height: 1.65; font-size: 0.98rem;">
+              Dengan integrasi teknologi mutakhir, kami menghadirkan produk berkualitas tinggi untuk
+              memberikan nilai lebih bagi pelanggan dalam fungsionalitas dan harga yang kompetitif.
+            </p>
 
-
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
-
+            <!-- Dual Image Grid for Perfect Balance -->
+            <div class="row gy-4">
+              <div class="col-6">
+                <div class="about-img-wrapper h-100 shadow-sm">
+                  <img src="assets/img/about.jpg" class="img-fluid rounded" alt="PT Inti Duta Lestari Plasindo Factory"
+                    style="object-fit: cover; height: 100%; min-height: 200px;">
+                </div>
+              </div>
+              <div class="col-6 mt-4">
+                <div class="about-img-wrapper h-100 shadow-sm">
+                  <img src="assets/img/about-2.jpg" class="img-fluid rounded"
+                    alt="PT Inti Duta Lestari Plasindo Production"
+                    style="object-fit: cover; height: 100%; min-height: 200px;">
+                </div>
               </div>
             </div>
+
           </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-4 mt-4 mt-lg-0">
+              <div class="mb-4 p-4 rounded-3"
+                style="background-color: rgba(255, 74, 23, 0.03); border-left: 4px solid var(--accent-color);">
+                <p class="text-dark fw-semibold mb-0" style="font-size: 1.05rem; line-height: 1.6;">
+                  Keunggulan kami terletak pada penguasaan teknologi manufaktur yang komprehensif untuk memastikan
+                  setiap
+                  detail produk diproduksi secara sempurna:
+                </p>
+              </div>
+
+              <!-- Capability Cards Grid (2x2) -->
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="about-feature-card h-100 m-0">
+                    <div class="feature-icon">
+                      <i class="bi bi-grid-3x3-gap-fill"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Injection Molding</h4>
+                      <p>Digunakan untuk memproduksi komponen dengan tingkat presisi tinggi dan detail yang rumit.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="about-feature-card h-100 m-0">
+                    <div class="feature-icon">
+                      <i class="bi bi-box-seam-fill"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Blow Molding</h4>
+                      <p>Memproduksi botol dan jerigen dengan bahan baku murni untuk memberikan kekuatan ekstra.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="about-feature-card h-100 m-0">
+                    <div class="feature-icon">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>Spot Welding</h4>
+                      <p>Fabrikasi kawat besi otomatis dengan kontrol presisi untuk hasil produk yang rapi dan kuat.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="about-feature-card h-100 m-0">
+                    <div class="feature-icon">
+                      <i class="bi bi-tools"></i>
+                    </div>
+                    <div class="feature-content">
+                      <h4>In-House Mold Shop</h4>
+                      <p>Mewujudkan desain produk plastik kustom yang unik sesuai kebutuhan dan identitas brand Anda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <!-- <section id="stats" class="stats section light-background">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div> -->
-    <!-- End Stats Item -->
-
-    <!-- <div class="col-lg-3 col-md-6">
-      <div class="stats-item d-flex align-items-center w-100 h-100">
-        <i class="bi bi-journal-richtext color-orange flex-shrink-0"></i>
-        <div>
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-            class="purecounter"></span>
-          <p>Projects</p>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Stats Item -->
-
-    <!-- <div class="col-lg-3 col-md-6">
-      <div class="stats-item d-flex align-items-center w-100 h-100">
-        <i class="bi bi-headset color-green flex-shrink-0"></i>
-        <div>
-          <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-            class="purecounter"></span>
-          <p>Hours Of Support</p>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- End Stats Item -->
-
-    <!-- <div class="col-lg-3 col-md-6">
-      <div class="stats-item d-flex align-items-center w-100 h-100">
-        <i class="bi bi-people color-pink flex-shrink-0"></i>
-        <div>
-          <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-            class="purecounter"></span>
-          <p>Hard Workers</p>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- End Stats Item -->
-
-    <!-- </div>
-
-    </div>
-
-    </section> -->
-    <!-- /Stats Section -->
-
-
-
-    <!-- Products Section -->
-    <section id="products" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Produk</h2>
-        <p>PRODUK KAMI</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="50">
-          <div class="col-6 text-justify px-lg-4">
-            <p class="text-secondary fs-5">
-              <strong>Produk Konsumen</strong>
-              <br>
-              Dari perlengkapan perawatan hewan dan tanaman kesayangan hingga sanitasi rumah,
-              produk kami didesain ergonomis, tahan lama, dan aman.
-            </p>
-          </div>
-          <div class="col-6 text-justify px-lg-4">
-            <p class="text-secondary fs-5">
-              <strong>Solusi Industri</strong>
-              <br>
-              Botol dan Jerigen standar industri yang aman dan berkualitas untuk menjaga kepercayaan terhadap produk
-              anda.
-            </p>
-          </div>
-        </div>
-
-        <div class="isotope-layout pb-4" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Produk Konsumen</li>
-            <li data-filter=".filter-product">Solusi Industri</li>
-            <!-- <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li> -->
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/branding-1.jpg" title="Branding 1"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/branding-2.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/branding-3.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/produk/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/produk/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Products Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Layanan Manufaktur</h2>
-        <p>LAYANAN UNGGULAN KAMI</p>
+      <div class="container elegant-section-title" data-aos="fade-up">
+        <span class="section-subtitle">Layanan Unggulan Kami</span>
+        <h2 class="section-main-title">Solusi Manufaktur Kustom</h2>
+        <div class="section-divider"></div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row justify-content-left mb-5" data-aos="fade-up" data-aos-delay="50">
-          <div class="col-lg-10 text-left">
-            <p class="text-secondary fs-5 mb-4 text-justify">
+        <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-10 text-center">
+            <p class="text-secondary fs-5 mb-4" style="line-height: 1.7; font-weight: 300;">
               <strong>Solusi Manufaktur Satu Atap dari Desain Cetakan hingga Produk Jadi.</strong><br>
               PT Inti Duta Lestari Plasindo hadir sebagai mitra strategis bagi Anda yang ingin fokus pada pemasaran dan
-              pengembangan merek, sementara urusan produksi biarkan kami yang menangani. Dengan pengalaman di teknologi
+              pengembangan merek, sementara urusan produksi biarkan kami yang menangani. Dengan pengalaman mendalam di
+              teknologi
               injection dan blow molding, kami siap memproduksi komponen plastik berkualitas tinggi di bawah identitas
               merek Anda.
             </p>
-            <h4 class="fw-bold text-dark mt-4">Mengapa Memilih Layanan Manufaktur Kami?</h4>
+            <h4 class="fw-bold text-dark mt-4 position-relative d-inline-block pb-2"
+              style="font-size: 1.4rem; letter-spacing: -0.3px;">
+              Mengapa Memilih Layanan Manufaktur Kami?
+              <span
+                style="position: absolute; bottom: 0; left: 20%; right: 20%; height: 2px; background-color: var(--accent-color);"></span>
+            </h4>
           </div>
         </div>
         <div class="row gy-5 justify-content-center">
@@ -462,19 +247,18 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/in-house-mold-shop.jpeg" class="img-fluid" alt="In-House Mold Shop">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-activity"></i>
+                  <img src="assets/img/mold.png" alt="Mold Icon"
+                    style="width: 28px; height: 28px; object-fit: contain; filter: brightness(0) invert(1);">
                 </div>
-                <a href="#services" class="stretched-link">
+                <a href="index.html#services" class="stretched-link">
                   <h3>In-House Mold Shop</h3>
                 </a>
-                <p>Layanan desain produk, 3D prototyping, dan pembuatan cetakan sesuai spesifikasi anda. Nilai tambah
-                  terbesar kami adalah kemampuan membuat cetakan (mold) secara mandiri. Kami membantu menerjemahkan ide
-                  atau desain teknis Anda menjadi produk fisik yang unik dan presisi, memastikan produk Anda memiliki
-                  ciri khas yang berbeda dari kompetitor.</p>
+                <p>Layanan desain produk plastik, prototyping 3D, serta perancangan cetakan presisi tinggi sesuai
+                  spesifikasi Anda.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -482,51 +266,53 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/oem-inject.jpeg" class="img-fluid" alt="Layanan OEM Manufaktur">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-broadcast"></i>
+                  <img src="assets/img/inject.png" alt="Mold Icon"
+                    style="width: 28px; height: 28px; object-fit: contain; filter: brightness(0) invert(1);">
                 </div>
-                <a href="#services" class="stretched-link">
-                  <h3>Layanan OEM injection & blow molding. </h3>
+                <a href="index.html#services" class="stretched-link">
+                  <h3>Layanan OEM & ODM</h3>
                 </a>
-                <p>Layanan manufaktur produk dengan teknologi injection molding dan blow molding dengan bahan baku murni
-                  siap melayani anda dengan cetakan yang sudah anda miliki atau dengan cetakan yang dapat didesain
-                  bersama kami.</p>
+                <p>Manufaktur botol, jerigen, dan komponen plastik presisi berskala industri menggunakan teknologi
+                  injection & blow molding termutakhir.</p>
               </div>
             </div>
           </div>
           <!-- End Service Item -->
 
-          <!-- <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/diskusi.jpeg" class="img-fluid" alt="Konsultasi Manufaktur">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-easel"></i>
+                  <i class="bi bi-chat-dots-fill"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
+                <a href="index.html#contact" class="stretched-link">
+                  <h3>Konsultasi Gagasan Produk</h3>
                 </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                  eos earum corrupti.</p>
+                <p>Diskusikan rancangan konsep produk Anda dengan tim rekayasa kami untuk menghadirkan kualitas terbaik
+                  serta biaya optimal.</p>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- End Service Item -->
+
           <div class="col-12 text-center mt-5" data-aos="fade-up" data-aos-delay="300">
-            <div class="p-5 bg-light rounded shadow-sm border mt-4">
-              <h4 class="fw-bold mb-3 text-dark">Siap Memulai Proyek Anda?</h4>
-              <p class="text-secondary mb-4 fs-5">
-                Hubungi kami untuk mendiskusikan bagaimana kami bisa membantu memproduksi lini produk plastik terbaru
-                Anda.
+            <div class="services-cta-banner mt-4">
+              <h4 class="fw-bold">Siap Memulai Proyek Anda?</h4>
+              <p>
+                Hubungi kami hari ini untuk mendiskusikan bagaimana kami dapat membantu memproduksi lini produk plastik
+                terbaru Anda dengan presisi tinggi dan efisiensi optimal.
               </p>
-              <a href="#contact" class="btn"
-                style="background-color: #ff4a17; color: #fff; padding: 10px 30px; font-weight: 600; border-radius: 4px;">Konsultasi
-                Sekarang</a>
+              <a href="index.html#contact" class="btn-consultation">
+                <span>Konsultasi Sekarang</span>
+                <i class="bi bi-arrow-right-short fs-5"></i>
+              </a>
             </div>
           </div>
 
@@ -536,10 +322,71 @@
 
     </section><!-- /Services Section -->
 
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background" style="background-color: #f8f9fa; padding: 60px 0;">
 
+      <div class="container" data-aos="fade-up">
 
-    <!-- /Clients Section -->
+        <div class="clients-header" data-aos="fade-up">
+          <span class="subtitle">Kolaborasi & Kepercayaan</span>
+          <h3>Mitra Industri & Klien Kami</h3>
+        </div>
 
+        <div class="row gy-4 justify-content-center align-items-center">
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="client-logo">
+              <img src="assets/img/clients/akasha.png" class="img-fluid" alt="Akasha">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="client-logo">
+              <img src="assets/img/clients/martina.png" class="img-fluid" alt="Martina Berto">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="client-logo">
+              <img src="assets/img/clients/bkp.png" class="img-fluid" alt="BKP">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="250">
+            <div class="client-logo">
+              <img src="assets/img/clients/konimex.png" class="img-fluid" alt="Konimex">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="client-logo">
+              <img src="assets/img/clients/kino.png" class="img-fluid" alt="Kino">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="350">
+            <div class="client-logo">
+              <img src="assets/img/clients/tempo.png" class="img-fluid" alt="Tempo">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="client-logo">
+              <img src="assets/img/clients/viva.webp" class="img-fluid" alt="Viva Cosmetics">
+            </div>
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="450">
+            <div class="client-logo">
+              <img src="assets/img/clients/victoria.png" class="img-fluid" alt="Victoria Care">
+            </div>
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
 
 
     </div>
@@ -548,205 +395,12 @@
 
     </section><!-- /Features Section -->
 
-    <!-- Services 2 Section -->
-    <!-- <section id="services-2" class="services-2 section light-background"> -->
-
-    <!-- Section Title -->
-    <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>CHECK OUR SERVICES</p>
-      </div> -->
-
-    <!-- End Section Title -->
-
-    <!-- <div class="container">
-
-      <div class="row gy-4">
-
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-briefcase icon flex-shrink-0"></i>
-            <div>
-              <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                occaecati cupiditate non provident</p>
-            </div>
-          </div>
-        </div> -->
-
-    <!-- End Service Item -->
-
-    <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="service-item d-flex position-relative h-100">
-        <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-          <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat tarad limino ata</p>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- End Service Item -->
-
-    <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-item d-flex position-relative h-100">
-        <i class="bi bi-bar-chart icon flex-shrink-0"></i>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur</p>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Service Item -->
-
-    <!-- <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="service-item d-flex position-relative h-100">
-        <i class="bi bi-binoculars icon flex-shrink-0"></i>
-        <div>
-          <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum</p>
-        </div>
-      </div>
-    </div> -->
-
 
     </div>
 
     </div>
 
     </section>
-
-    <!-- /Services 2 Section -->
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-        <h3>Sara Wilsson</h3>
-        <h4>Designer</h4>
-        <div class="stars">
-          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-        </div>
-        <p>
-          <i class="bi bi-quote quote-icon-left"></i>
-          <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-            malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-          <i class="bi bi-quote quote-icon-right"></i>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-        <h3>Jena Karlis</h3>
-        <h4>Store Owner</h4>
-        <div class="stars">
-          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-        </div>
-        <p>
-          <i class="bi bi-quote quote-icon-left"></i>
-          <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-            minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-          <i class="bi bi-quote quote-icon-right"></i>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-        <h3>Matt Brandon</h3>
-        <h4>Freelancer</h4>
-        <div class="stars">
-          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-        </div>
-        <p>
-          <i class="bi bi-quote quote-icon-left"></i>
-          <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-            velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-            veniam.</span>
-          <i class="bi bi-quote quote-icon-right"></i>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-        <h3>John Larson</h3>
-        <h4>Entrepreneur</h4>
-        <div class="stars">
-          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-        </div>
-        <p>
-          <i class="bi bi-quote quote-icon-left"></i>
-          <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-            culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-            quid.</span>
-          <i class="bi bi-quote quote-icon-right"></i>
-        </p>
-      </div>
-    </div> -->
-
-    <!-- End testimonial item -->
 
     </div>
     <div class="swiper-pagination"></div>
@@ -755,72 +409,6 @@
     </div>
 
     </section><!-- /Testimonials Section -->
-
-    <!-- Team Section -->
-    <!-- <section id="team" class="team section light-background"> -->
-
-    <!-- Section Title -->
-    <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
-      </div> -->
-    <!-- End Section Title -->
-
-    <!-- <div class="container">
-
-      <div class="row gy-5">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="member">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-    <!-- End Team Member -->
-
-    <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="member">
-        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-        <div class="member-info">
-          <h4>Sarah Jhonson</h4>
-          <span>Product Manager</span>
-          <div class="social">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Team Member -->
-
-    <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="member">
-        <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-        <div class="member-info">
-          <h4>William Anderson</h4>
-          <span>CTO</span>
-          <div class="social">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- End Team Member -->
 
     </div>
 
@@ -832,9 +420,10 @@
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Kontak</h2>
-        <p>Hubungi kami melalui form di bawah ini</p>
+      <div class="container elegant-section-title" data-aos="fade-up">
+        <span class="section-subtitle">Hubungi Kami</span>
+        <h2 class="section-main-title">Kontak & Lokasi</h2>
+        <div class="section-divider"></div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -847,9 +436,9 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
                   data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Alamat</h3>
+                  <h3>Alamat Kantor & Pabrik</h3>
                   <p class="text-center">PT. INTI DUTA LESTARI PLASINDO
-                    <br> Rungkut Industri 3 No. 29 Gunung Anyar - Surabaya Jawa Timur
+                    <br> Rungkut Industri 3 No. 29 Gunung Anyar - Surabaya, Jawa Timur
                   </p>
                 </div>
               </div><!-- End Info Item -->
@@ -858,7 +447,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
                   data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Hubungi Kami</h3>
+                  <h3>Telepon</h3>
                   <p>031-841-4951</p>
                 </div>
               </div><!-- End Info Item -->
@@ -881,27 +470,31 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" placeholder="Alamat Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subjek Pesan" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="5"
+                    placeholder="Tulis pesan atau pertanyaan Anda di sini..." required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Memuat...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Pesan Anda telah terkirim. Terima kasih!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit">
+                    <span>Kirim Pesan</span>
+                    <i class="bi bi-send-fill"></i>
+                  </button>
                 </div>
 
               </div>
@@ -916,51 +509,10 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4 justify-content-between">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo idlp.png" alt="IDLP Logo" style="max-height: 40px; margin-right: 15px;">
-            <span class="sitename">Inti Duta Lestari Plasindo</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p><strong>PT. INTI DUTA LESTARI PLASINDO</strong></p>
-            <p>Rungkut Industri 3 No. 29<br>Gunung Anyar - Surabaya, Jawa Timur</p>
-            <p class="mt-3"><strong>Telepon:</strong> <span>031-841-4951</span></p>
-            <p><strong>Email:</strong> <span>info@intiduta.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-links">
-          <h4>Tautan Navigasi</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Beranda</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#about">Tentang Kami</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Layanan Manufaktur</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#products">Produk</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Hubungi Kami</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Inti Duta Lestari Plasindo</strong> <span>All Rights
-          Reserved</span></p>
-      <div class="credits">
-
-      </div>
-    </div>
-
-  </footer>
+  <script src="assets/js/footer.js"></script>
+  <script>
+    loadFooter('');
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

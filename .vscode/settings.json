@@ -1,0 +1,10 @@
+{
+  "livePreview.defaultPreviewPath": "/index.html",
+  "debug.hideSlowPreLaunchWarning": true,
+  "discord.removeDetails": false,
+  "discord.removeRemoteRepository": true,
+  "discord.workspaceExcludePatterns": [
+    ""
+  ],
+  "discord.removeLowerDetails": true
+}
