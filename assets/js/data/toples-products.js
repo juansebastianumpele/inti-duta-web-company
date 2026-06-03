@@ -1,4 +1,14 @@
 const productData = [
-        { name: "Toples Makanan 01", size: "250ml", img: "../../../assets/img/produk/app-3.jpg", link: "detail-toples-01.html" },
-        { name: "Toples Makanan 02", size: "500ml", img: "../../../assets/img/produk/app-3.jpg", link: "detail-toples-02.html" }
-      ];
+  {
+    name: "Toples PET",
+    size: "150ml - 300ml",
+    img: "../../../assets/img/produk/toples/toples-PET.png",
+    link: "detail-toples-01.html",
+  },
+  // {
+  //   name: "Toples Makanan 02",
+  //   size: "500ml",
+  //   img: "../../../assets/img/produk/app-3.jpg",
+  //   link: "detail-toples-02.html",
+  // },
+];

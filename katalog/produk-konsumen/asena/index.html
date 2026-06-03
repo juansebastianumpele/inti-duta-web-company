@@ -40,7 +40,10 @@
       style="background: linear-gradient(135deg, rgba(20,35,46,0.9) 0%, rgba(23, 131, 255, 0.85) 100%), url('../../../assets/img/page-title-bg.webp') center/cover; padding: 180px 0 100px 0;">
       <div class="container position-relative text-center">
         <h1 class="fw-bold mb-2">SERI ASENA</h1>
-        <p class="fs-5">Produk unggulan untuk kebutuhan konsumen harian. Dibuat dengan material berkualitas tinggi.</p>
+        <p class="fs-5">Asena merupakan merek legendaris yang telah menjadi pilihan utama konsumen selama puluhan tahun
+          dalam kategori trigger sprayer multifungsi. Dengan kualitas teruji dan desain ergonomis, Asena menghadirkan
+          rangkaian produk yang praktis, tahan lama, dan sesuai kebutuhan rumah tangga maupun profesional.
+        </p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="../../../index.html">Beranda</a></li>
@@ -59,57 +62,9 @@
 
     <!-- Data-Driven Rendering -->
     <script src="../../../assets/js/product-renderer.js"></script>
+    <script src="../../../assets/js/data/asena-product.js"></script>
     <script>
-      const productData = [{
-        name: "Alat Semprot Serbaguna",
-        size: "300ml, 500ml, 1 Liter",
-        img: "../../../assets/img/produk/asena/01-ASENA1.jpg",
-        link: "detail-asena-01.html"
-      },
-      {
-        name: "Alat Semprot PET",
-        size: "300ml, 400ml",
-        img: "../../../assets/img/produk/asena/02-ASENA2.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Botol Selang ",
-        size: "500ml, 1Liter",
-        img: "../../../assets/img/produk/asena/03-BOTOL-SELANG.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Tempat Pakan Burung",
-        size: "500ml",
-        img: "../../../assets/img/produk/asena/04-TPB1.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Tempat Minum Burung",
-        size: "1Liter",
-        img: "../../../assets/img/produk/asena/05-TPB2.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Seri Asena 02",
-        size: "500ml",
-        img: "../../../assets/img/produk/asena/06-TMB.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Seri Asena 02",
-        size: "500ml",
-        img: "../../../assets/img/produk/asena/07-KANDANG-JANGKRIK.jpg",
-        link: "detail-asena-02.html"
-      },
-      {
-        name: "Tempat Minum Ayam",
-        size: "Liter",
-        img: "../../../assets/img/produk/asena/08-TMA.jpg",
-        link: "detail-asena-02.html"
-      }
-      ];
-      renderProductCards('product-grid-asena', productData, {
+      renderProductCards('product-grid-asena', asenaProductData, {
         isIsotope: false
       });
     </script>

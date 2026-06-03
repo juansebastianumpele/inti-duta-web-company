@@ -1,131 +1,162 @@
 const mainProducts = [
-
-              {
-                name: "Alat Semprot Serbaguna",
-                desc: "Tersedia dalam berbagai ukuran untuk kebutuhan penyemprotan serbaguna sehari-hari.",
-                img: "assets/img/produk/asena/01-ASENA1.jpg",
-                zoomImg: "assets/img/produk/asena/01-ASENA1.jpg",
-                link: "/katalog/produk-konsumen/asena/detail-asena-01.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Alat Semprot PET",
-                desc: "Botol semprot berbahan PET yang praktis dan cocok untuk berbagai kebutuhan cairan.",
-                img: "assets/img/produk/asena/02-ASENA2.jpg",
-                zoomImg: "assets/img/produk/asena/02-ASENA2.jpg",
-                link: "/katalog/produk-konsumen/asena/detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Botol Selang",
-                desc: "Botol dengan selang fleksibel yang memudahkan penggunaan dalam berbagai aktivitas.",
-                img: "assets/img/produk/asena/03-BOTOL-SELANG.jpg",
-                zoomImg: "assets/img/produk/asena/03-BOTOL-SELANG.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Tempat Pakan Burung",
-                desc: "Wadah pakan burung praktis dengan desain yang mudah digunakan dan dibersihkan.",
-                img: "assets/img/produk/asena/04-TPB1.jpg",
-                zoomImg: "assets/img/produk/asena/04-TPB1.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Tempat Minum Burung",
-                desc: "Tempat minum burung berkapasitas besar untuk menjaga ketersediaan air lebih lama.",
-                img: "assets/img/produk/asena/05-TPB2.jpg",
-                zoomImg: "assets/img/produk/asena/05-TPB2.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Seri Asena 02",
-                desc: "Produk seri Asena dengan desain praktis dan material berkualitas tinggi.",
-                img: "assets/img/produk/asena/06-TMB.jpg",
-                zoomImg: "assets/img/produk/asena/06-TMB.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Kandang Jangkrik",
-                desc: "Kandang jangkrik yang dirancang untuk memudahkan perawatan dan penyimpanan.",
-                img: "assets/img/produk/asena/07-KANDANG-JANGKRIK.jpg",
-                zoomImg: "assets/img/produk/asena/07-KANDANG-JANGKRIK.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Tempat Minum Ayam",
-                desc: "Tempat minum ayam yang praktis digunakan untuk kebutuhan peternakan unggas.",
-                img: "assets/img/produk/asena/08-TMA.jpg",
-                zoomImg: "assets/img/produk/asena/08-TMA.jpg",
-                link: "detail-asena-02.html",
-                filterClass: "filter-app filter-asena filter-konsumen"
-              },
-              {
-                name: "Kemasan Industri 1",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/product-1.jpg",
-                zoomImg: "assets/img/produk/product-1.jpg",
-                link: "katalog/produk-industri/argo/",
-                filterClass: "filter-product filter-argo"
-              },
-              {
-                name: "Cetakan Custom 1",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/branding-1.jpg",
-                zoomImg: "assets/img/produk/branding-1.jpg",
-                link: "katalog/produk-konsumen/misty/",
-                filterClass: "filter-branding filter-misty"
-              },
-              {
-                name: "Aksesoris 1",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/books-1.jpg",
-                zoomImg: "assets/img/produk/books-1.jpg",
-                link: "katalog/produk-konsumen/master/",
-                filterClass: "filter-books filter-master"
-              },
-              {
-                name: "Produk Konsumen 2",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/app-2.jpg",
-                zoomImg: "assets/img/produk/app-2.jpg",
-                link: "katalog/produk-konsumen/safari/",
-                filterClass: "filter-app filter-safari"
-              },
-              {
-                name: "Kemasan Industri 2",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/product-2.jpg",
-                zoomImg: "assets/img/produk/product-2.jpg",
-                link: "katalog/produk-industri/jerigen/",
-                filterClass: "filter-product filter-jerigen"
-              },
-              {
-                name: "Cetakan Custom 2",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/branding-2.jpg",
-                zoomImg: "assets/img/produk/branding-2.jpg",
-                link: "katalog/produk-industri/pump/",
-                filterClass: "filter-branding filter-pump"
-              },
-              {
-                name: "Aksesoris 2",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/books-2.jpg",
-                zoomImg: "assets/img/produk/books-2.jpg",
-                link: "katalog/produk-industri/minuman/",
-                filterClass: "filter-books filter-minuman"
-              },
-              {
-                name: "Produk Konsumen 3",
-                desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
-                img: "assets/img/produk/app-3.jpg",
-                zoomImg: "assets/img/produk/app-3.jpg",
-                link: "katalog/produk-industri/toples/",
-                filterClass: "filter-app filter-toples"
-              }
-            ];
+  {
+    name: "Alat Semprot Serbaguna",
+    desc: "Tersedia dalam berbagai ukuran untuk kebutuhan penyemprotan serbaguna sehari-hari.",
+    img: "assets/img/produk/asena/01-ASENA1.jpg",
+    zoomImg: "assets/img/produk/asena/01-ASENA1.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-01.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Alat Semprot PET",
+    desc: "Botol semprot berbahan PET yang praktis dan cocok untuk berbagai kebutuhan cairan.",
+    img: "assets/img/produk/asena/02-ASENA2.jpg",
+    zoomImg: "assets/img/produk/asena/02-ASENA2.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-02.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Botol Selang",
+    desc: "Botol dengan selang fleksibel yang memudahkan penggunaan dalam berbagai aktivitas.",
+    img: "assets/img/produk/asena/03-BOTOL-SELANG.jpg",
+    zoomImg: "assets/img/produk/asena/03-BOTOL-SELANG.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-03.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Tempat Pakan Burung",
+    desc: "Wadah pakan burung praktis dengan desain yang mudah digunakan dan dibersihkan.",
+    img: "assets/img/produk/asena/04-TPB1.jpg",
+    zoomImg: "assets/img/produk/asena/04-TPB1.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-05.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Tempat Minum Burung",
+    desc: "Tempat minum burung berkapasitas besar untuk menjaga ketersediaan air lebih lama.",
+    img: "assets/img/produk/asena/05-TPB2.jpg",
+    zoomImg: "assets/img/produk/asena/05-TPB2.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-05.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Asena Mini Bird Feeder & Drinker",
+    desc: "Wadah mini transparan dengan pengait built-in, ideal untuk perawatan hewan peliharaan kecil.",
+    img: "assets/img/produk/asena/06-TMB.jpg",
+    zoomImg: "assets/img/produk/asena/06-TMB.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-04.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Kandang Jangkrik",
+    desc: "Wadah penyimpanan pakan burung yang ringan dan kokoh, dilengkapi laci multifungsi di bagian bawah.",
+    img: "assets/img/produk/asena/07-KANDANG-JANGKRIK.jpg",
+    zoomImg: "assets/img/produk/asena/07-KANDANG-JANGKRIK.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-07.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Tempat Minum Ayam",
+    desc: "Wadah minum manual berkapasitas 1 liter, dirancang khusus untuk anak ayam (DOC), puyuh, dan unggas kecil lainnya.",
+    img: "assets/img/produk/asena/08-TMA.jpg",
+    zoomImg: "assets/img/produk/asena/08-TMA.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-08.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Asena Bird Bath",
+    desc: "Tempat mandi burung multifungsi, dapat digunakan untuk minum dan mandi hewan peliharaan Anda.",
+    img: "assets/img/produk/asena/06-TMB.jpg",
+    zoomImg: "assets/img/produk/asena/06-TMB.jpg",
+    link: "/katalog/produk-konsumen/asena/detail-asena-06.html",
+    filterClass: "filter-app filter-asena filter-konsumen",
+  },
+  {
+    name: "Botol Agro HDPE",
+    desc: "Dirancang khusus dengan material HDPE premium untuk ketahanan maksimal, anti bocor, dan perlindungan ganda.",
+    img: "assets/img/produk/argo/botol-agro.png",
+    zoomImg: "assets/img/produk/argo/botol-agro.png",
+    link: "/katalog/produk-industri/argo/detail-argo-01.html",
+    filterClass: "filter-product filter-argo",
+  },
+  {
+    name: "Botol Kale PET",
+    desc: "Botol transparan premium dengan tutup segel short neck otomatis, ideal untuk minuman kekinian.",
+    img: "assets/img/produk/argo/botol-kale-PET.png",
+    zoomImg: "assets/img/produk/argo/botol-kale-PET.png",
+    link: "/katalog/produk-industri/argo/detail-argo-02.html",
+    filterClass: "filter-product filter-argo",
+  },
+  {
+    name: "Misty Stick Sprayer",
+    desc: "Ubah botol plastik bekas menjadi semprotan praktis yang multifungsi dan ramah lingkungan.",
+    img: "assets/img/produk/misty/stick-prayer1.png",
+    zoomImg: "assets/img/produk/misty/stick-prayer1.png",
+    link: "/katalog/produk-konsumen/misty/detail-misty-01.html",
+    filterClass: "filter-app filter-misty filter-konsumen",
+  },
+  {
+    name: "Misty Pressure Sprayer 1L",
+    desc: "Solusi cerdas dan ringkas untuk penyiraman tanaman, pemupukan, dan kebutuhan kebersihan rumah.",
+    img: "assets/img/produk/misty/misty-1-liter.png",
+    zoomImg: "assets/img/produk/misty/misty-1-liter.png",
+    link: "/katalog/produk-konsumen/misty/detail-misty-02.html",
+    filterClass: "filter-app filter-misty filter-konsumen",
+  },
+  {
+    name: "Misty Pressure Sprayer 2L",
+    desc: "Kapasitas lebih besar untuk penyemprotan lebih lama, ideal untuk kebun, otomotif, dan disinfeksi rumah.",
+    img: "assets/img/produk/misty/misty-2-liter.png",
+    zoomImg: "assets/img/produk/misty/misty-2-liter.png",
+    link: "/katalog/produk-konsumen/misty/detail-misty-03.html",
+    filterClass: "filter-app filter-misty filter-konsumen",
+  },
+  {
+    name: "Master Pressure Sprayer 5L",
+    desc: "Sprayer berkapasitas 5 liter dengan material tebal, katup pengaman, dan trigger lock untuk kenyamanan maksimal.",
+    img: "assets/img/produk/master/master-5-liter.png",
+    zoomImg: "assets/img/produk/master/master-5-liter.png",
+    link: "/katalog/produk-konsumen/master/detail-master-01.html",
+    filterClass: "filter-app filter-master filter-konsumen",
+  },
+  // {
+  //   name: "Produk Konsumen 2",
+  //   desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
+  //   img: "assets/img/produk/app-2.jpg",
+  //   zoomImg: "assets/img/produk/app-2.jpg",
+  //   link: "katalog/produk-konsumen/safari/",
+  //   filterClass: "filter-app filter-safari",
+  // },
+  {
+    name: "Jerigen HDPE Premium",
+    desc: "Jerigen berbahan HDPE tebal dan kokoh dengan perlindungan tutup segel ganda, aman untuk industri kimia dan pangan.",
+    img: "assets/img/produk/jerigen/jerigen1.png",
+    zoomImg: "assets/img/produk/jerigen/jerigen1.png",
+    link: "/katalog/produk-industri/jerigen/detail-jerigen-01.html",
+    filterClass: "filter-product filter-jerigen",
+  },
+  // {
+  //   name: "Cetakan Custom 2",
+  //   desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
+  //   img: "assets/img/produk/branding-2.jpg",
+  //   zoomImg: "assets/img/produk/branding-2.jpg",
+  //   link: "katalog/produk-industri/pump/",
+  //   filterClass: "filter-branding filter-pump",
+  // },
+  // {
+  //   name: "Aksesoris 2",
+  //   desc: "Dirancang dengan presisi dan bahan berkualitas tinggi untuk memastikan keandalan optimal.",
+  //   img: "assets/img/produk/books-2.jpg",
+  //   zoomImg: "assets/img/produk/books-2.jpg",
+  //   link: "katalog/produk-industri/minuman/",
+  //   filterClass: "filter-books filter-minuman",
+  // },
+  {
+    name: "Toples PET",
+    desc: "Toples food grade yang jernih, kedap udara, dan anti pecah. Pilihan tepat untuk UMKM kuliner.",
+    img: "assets/img/produk/toples/toples-PET.png",
+    zoomImg: "assets/img/produk/toples/toples-PET.png",
+    link: "/katalog/produk-industri/toples/detail-toples-01.html",
+    filterClass: "filter-app filter-toples filter-industri",
+  },
+];

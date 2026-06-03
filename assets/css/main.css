@@ -12,7 +12,7 @@
   --default-color: #1c75db; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #14232e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #1c75db; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --title-hero: #499af7;
+  --title-hero: hsl(212, 92%, 63%);
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: hsl(0, 0%, 7%); /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }

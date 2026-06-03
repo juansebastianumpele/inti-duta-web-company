@@ -1,5 +1,5 @@
 function loadNavbar(basePath) {
-    const html = `<header id="header" class="header d-flex align-items-center fixed-top">
+  const html = `<header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="${basePath}index.html" class="logo d-flex align-items-center me-auto">
@@ -12,7 +12,7 @@ function loadNavbar(basePath) {
         <ul>
           <li><a href="${basePath}index.html#hero" class="active">Beranda</a></li>
           <li><a href="${basePath}index.html#about">Tentang Kami</a></li>
-                    <li class="dropdown"><a href="${basePath}produk.html"><span>Produk Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <li class="dropdown"><a href="${basePath}index.html#products"><span>Produk Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Produk Konsumen</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -47,5 +47,5 @@ function loadNavbar(basePath) {
 
     </div>
   </header>`;
-    document.currentScript.insertAdjacentHTML('beforebegin', html);
+  document.currentScript.insertAdjacentHTML("beforebegin", html);
 }

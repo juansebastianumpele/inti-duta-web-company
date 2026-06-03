@@ -6,5 +6,10 @@
   "discord.workspaceExcludePatterns": [
     ""
   ],
-  "discord.removeLowerDetails": true
+  "discord.removeLowerDetails": true,
+  "vscord.app.name": "Code",
+  "vscord.status.showElapsedTime": false,
+  "vscord.status.idle.timeout": 172.8,
+  "vscord.app.privacyMode.enable": true,
+  "vscord.status.idle.disconnectOnIdle": false
 }

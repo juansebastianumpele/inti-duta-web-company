@@ -12,13 +12,10 @@ function loadFooter(basePath) {
             <p><strong>PT. INTI DUTA LESTARI PLASINDO</strong></p>
             <p>Rungkut Industri 3 No. 29<br>Gunung Anyar - Surabaya, Jawa Timur</p>
             <p class="mt-3"><strong>Telepon:</strong> <span>031-841-4951</span></p>
+            <p class=""><strong>Whatsapp:</strong> <span>081-2106-1279</span></p>
             <p><strong>Email:</strong> <span>info@intiduta.com</span></p>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
+          
         </div>
 
         <div class="col-lg-4 col-md-12 footer-links">

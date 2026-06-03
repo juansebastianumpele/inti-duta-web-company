@@ -4,22 +4,22 @@ function renderProductCards(containerId, products, options = {}) {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  let html = '';
-  products.forEach(p => {
+  let html = "";
+  products.forEach((p) => {
     // Tentukan class pembungkus (apakah menggunakan Isotope untuk halaman galeri utama, atau grid biasa)
-    const wrapperClass = options.isIsotope 
-      ? `col-lg-4 col-md-6 portfolio-item isotope-item ${p.filterClass || ''}`
+    const wrapperClass = options.isIsotope
+      ? `col-lg-4 col-md-6 portfolio-item isotope-item ${p.filterClass || ""}`
       : `col-lg-4 col-md-6 mb-4`;
 
     // Tentukan tombol Zoom jika ada
-    const zoomBtn = p.zoomImg 
+    const zoomBtn = p.zoomImg
       ? `<a href="${p.zoomImg}" class="glightbox btn btn-light rounded-circle p-2 mx-2" title="Perbesar"><i class="bi bi-zoom-in fs-4"></i></a>`
-      : '';
+      : "";
 
     // Tentukan tampilan teks (ukuran vs deskripsi)
-    const textDesc = p.size 
-      ? `<p class="card-text text-muted small mb-4">Ukuran: ${p.size}</p>` 
-      : `<p class="card-text text-muted small mb-4">${p.desc || ''}</p>`;
+    const textDesc = p.size
+      ? `<p class="card-text text-muted small mb-4">Ukuran: ${p.size}</p>`
+      : `<p class="card-text text-muted small mb-4">${p.desc || ""}</p>`;
 
     html += `
       <div class="${wrapperClass}">
